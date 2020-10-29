@@ -2,6 +2,9 @@
 #alpine은 npm이 들어있지않음
 FROM node:10
 
+# WORKDIR을 표기하지 않은 경우 '/' 경로에 파일이 복사된다.
+WORKDIR /usr/src/app
+
 #프로젝트 안에 package.json을 도커 컨테이너 안으로 복사한다.
 #COPY package*.json ./
 #프로젝트 안에 모든 파일을 도커 컨테이너 안으로 복사한다.
