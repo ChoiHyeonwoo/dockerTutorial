@@ -11,3 +11,6 @@ app.get('/', (req, res) => {
 
 app.listen(PORT);
 console.log("Server running");
+
+//docker run -d -p 5000:8080 -v /usr/src/app/node_modules -v $(pwd):/usr/src/app hwchoi/nodejs
+//-> 이미지 빌드없이 소스변경 반영
