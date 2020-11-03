@@ -1,0 +1,10 @@
+# 컨테이너 간 통신을 mapping하기 위해 필요한 파일
+# ex) application container <-> DB container
+version: "3"
+services:
+    redis-server:
+        image: "redis"
+    node-app:
+        build: .
+        ports:
+            - "5000:8080"
