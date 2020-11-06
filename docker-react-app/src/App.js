@@ -13,7 +13,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Hello World!
+          docker-compose로 했지롱! docker-compose 개편해요
         </a>
       </header>
     </div>
